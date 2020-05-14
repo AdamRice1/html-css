@@ -18,12 +18,37 @@
         <div id="contact">
             <h3>Contact Me and I'll Will Get Back to You Shortly</h3>
             <form>
-                <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" name="first_name">
-                <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" name="last_name">
+                <div class="form_items">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name"><br>
+                </div>
+                <div class="form_items">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name"><br>
+                </div>
+                <div class="form_items">
+                    <label for='friends'>Are We Friends?</label>
+                    <select id="friends" name="friends">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="maybe">Maybe</option>
+                        <option value="enemies">Enemies Actually</option>
+                    </select>
+                </div>
+                <div class="form_items">
+                    <label>What's Up?</label><br>
+                    <textarea name="message" rows="10" cols="50">
+                        What Can I Do For You?
+                    </textarea>
+                </div>
+                <div class="form_items">
+                    <input type="submit" value="Submit Form">
+                </div>
             </form>
         </div>
+        <footer>
+                <h1 style="text-align: center;">Thanks For Visiting</h1>
+            </footer>
     </div>
 </body>
 </html>
