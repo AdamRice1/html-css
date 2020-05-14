@@ -1,0 +1,49 @@
+#wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: lightsalmon;
+}
+.info{
+    display: inline-block;
+    
+}
+#main{
+    margin-top: 20px;
+    margin-left: 280px;
+}
+header{
+    background-color: silver;
+    width: 100%;
+    padding-top: 10px;
+    margin-top: -20px;
+}
+#top{
+    list-style-type: none;
+}
+#top ul li{
+    display: inline;
+}
+img{
+    outline: solid;
+    outline-color: black;
+}
+.movies{
+    display: inline-block;
+    outline: solid;
+    outline-color: blue;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.posters{
+    height: 400px;
+    width: 300px;
+}
+footer{
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+}
+#contact{
+    width: 40%;
+    margin-left: 30%;
+}
