@@ -1,22 +1,55 @@
 #wrapper{
     width: 100%;
     height: 100%;
-    background-color: lightsalmon;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);;
 }
 .info{
     display: inline-block;
+    border: 5px solid black;
+    padding: 2px;
+    border-radius: 10px;
     
 }
 #main{
-    margin-top: 20px;
-    margin-left: 280px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+#hello_there{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 985px) {
+    #main{
+      flex-direction: column;
+      align-items: center;
+    }
+    .info{
+        margin-top: 25px;
+    }
+  }
 header{
-    background-color: silver;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     width: 100%;
     padding-top: 10px;
     margin-top: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
+@media only screen and (max-width: 760px) {
+    header{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 #top{
     list-style-type: none;
 }
@@ -24,24 +57,34 @@ header{
     display: inline;
 }
 img{
-    outline: solid;
-    outline-color: black;
+    width: 400px;
+    height: 400px;
 }
 .movies{
-    display: inline-block;
     outline: solid;
     outline-color: blue;
-    margin-left: 20%;
-    margin-top: 10%;
+    width: 300px;
+    margin: 25px;
 }
+#gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+@media only screen and (max-width: 1066px) {
+    #gallery {
+      justify-content: space-evenly;
+    }
+  }
 .posters{
     height: 400px;
     width: 300px;
 }
 footer{
-    background-color: gray;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     width: 100%;
-    height: 100%;
+    height: 500px;
 }
 #contact{
     width: 40%;
@@ -49,7 +92,11 @@ footer{
     outline: solid;
     outline-color: black;
     padding: 5px;
+    margin-top: 2.5%;
 }
 .form_items{
     margin-top: 5%;
 }
+/* #btn:hover{
+    margin-left: 100%;
+} */

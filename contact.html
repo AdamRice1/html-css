@@ -5,18 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <script>
+            function move_the_btn() {
+            var x = document.getElementById("demo")
+            x = Math.floor((Math.random() * 1000) + 1);
+            var y = x + 1;
+            console.log(x)
+            console.log(y)
+            document.getElementById('btn').style.position = 'absolute'
+            document.getElementById('btn').style.left = x + 'px';
+            document.getElementById('btn').style.top = y + 'px';
+            console.log()
+}
+    </script>
 </head>
 <body>
     <div id="wrapper">
-        <header>
-            <ul id='top'>
-                <li style="display: inline-block; margin-right: 25px;"><h1>My Name is Adam Rice</h1></li>
-                <li style="display: inline-block; margin-right: 25px;"><h4><a href="./gallery.html">Images of Things I like</a></h4></li>
-                <li style="display: inline-block;"><h4><a href="./contact.html">Contact Me</a></h4></li>
-            </ul>
-        </header>
+            <header>
+                    <a href="./index.html"><h1 style="min-width: 404px; margin-left: 10%;">My Name is Adam Rice</h1></a>
+                    <a href="./gallery.html"><h3>Images of Things I like</h3></a>
+                    <a href="./contact.html"><h3>Contact Me</h3></a>
+            </header>
         <div id="contact">
-            <h3>Contact Me and I'll Will Get Back to You Shortly</h3>
+            <h3>If you contact me I will give you $1,000,000!</h3>
             <form>
                 <div class="form_items">
                     <label for="first_name">First Name:</label>
@@ -42,7 +53,7 @@
                     </textarea>
                 </div>
                 <div class="form_items">
-                    <input type="submit" value="Submit Form">
+                    <input onmouseover="move_the_btn()" id='btn' type="submit" value="Submit Form">
                 </div>
             </form>
         </div>
