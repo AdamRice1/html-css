@@ -61,6 +61,38 @@
        });
        });
        </script>
+       <script>
+           function playVader(){
+               var path = "no-i-am-your-father.mp3"
+               console.log("I have you now")
+               var snd = new Audio(path)
+               snd.play();
+           }
+           function playJoker(){
+               var path = "batman.mp3"
+               console.log("I have you now")
+               var snd = new Audio(path)
+               snd.play();
+           }
+           function playWesley(){
+               var path = "decent.mp3"
+               console.log("I have you now")
+               var snd = new Audio(path)
+               snd.play();
+           }
+           function playIndie(){
+               var path = "backbone.mp3"
+               console.log("I have you now")
+               var snd = new Audio(path)
+               snd.play();
+           }
+           function playDoc(){
+               var path = "butthead.mp3"
+               console.log("I have you now")
+               var snd = new Audio(path)
+               snd.play();
+           }
+       </script>
 </head>
 <body>
     <div id="wrapper">
@@ -71,12 +103,12 @@
             </header>
         <h2 style="text-align: center; font-size: 200%; text-decoration: underline;">Movies I Like</h2>
         <div id="gallery">
-            <div class="movies"><img  id='batman' class="posters" src="Dark_Knight.jpg"></div>
+            <div class="movies" onclick='playJoker()'><img  id='batman' class="posters" src="Dark_Knight.jpg"></div>
             <div class="movies"><img id="moonrise" class="posters" src="download.jpg"></div>
-            <div class="movies"><img id='bride' class="posters" src="v1.jpg"></div>
-            <div class="movies"><img id='star_wars' class="posters" src="MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"></div>
-            <div class="movies"><img id="marty" class="posters" src="Back_to_the_Future.jpg"></div>
-            <div class="movies"><img id="indie" class="posters" src="51K8ouYrHeL._SY445_.jpg"></div>
+            <div class="movies" onclick="playWesley()"><img id='bride' class="posters" src="v1.jpg"></div>
+            <div class="movies" onclick='playVader()'><img id='star_wars' class="posters" src="MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"></div>
+            <div class="movies" onclick="playDoc()"><img id="marty" class="posters" src="Back_to_the_Future.jpg"></div>
+            <div class="movies" onclick="playIndie()"><img id="indie" class="posters" src="51K8ouYrHeL._SY445_.jpg"></div>
             <div class="movies"><img id="school" class="posters" src="ferris-poster.jpg"></div>
             <div class="movies"><img id="holy" class="posters" src="holygrail_lg.jpg"></div>
         </div>
