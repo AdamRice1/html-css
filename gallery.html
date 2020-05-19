@@ -3,24 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>Gallery</title>
+    <!-- <script>
+            function hello(element) {
+                var x = element.src;
+                console.log(x)
+                element.setAttribute('src', x );
+                console.log("Here There")
+            }
+            function back(element) {
+                element.setAttribute('src', x);
+            }
+       </script> -->
+       <script>
+            $(document).ready(function(){
+           $('#school').hover(function () {
+           this.src = 'ferris-poster2.jpg';
+       }, function () {
+           this.src = 'ferris-poster.jpg';
+       });
+           $('#holy').hover(function () {
+           this.src = 'black_knight.jpg';
+       }, function () {
+           this.src = 'holygrail_lg.jpg';
+       });
+       $('#marty').hover(function () {
+           this.src = 'btf2.jpg';
+       }, function () {
+           this.src = 'Back_to_the_Future.jpg';
+       });
+       $('#batman').hover(function () {
+           this.src = 'joker.jpg';
+       }, function () {
+           this.src = 'Dark_Knight.jpg';
+       });
+       $('#moonrise').hover(function () {
+           this.src = 'kingdom.jpg';
+       }, function () {
+           this.src = 'download.jpg';
+       });
+       $('#bride').hover(function () {
+           this.src = 'bride.jpg';
+       }, function () {
+           this.src = 'V1.jpg';
+       });
+       $('#star_wars').hover(function () {
+           this.src = 'wars2.jpg';
+       }, function () {
+           this.src = 'MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg';
+       });
+       $('#indie').hover(function () {
+           this.src = 'raidersbg1.jpg';
+       }, function () {
+           this.src = '51K8ouYrHeL._SY445_.jpg';
+       });
+       });
+       </script>
 </head>
 <body>
     <div id="wrapper">
-        <header>
-                <a href="./index.html"><h1 style="min-width: 404px; margin-left: 10%;">My Name is Adam Rice</h1></a>
-                <a href="./gallery.html"><h3>Images of Things I like</h3></a>
-                <a href="./contact.html"><h3>Contact Me</h3></a>
-        </header>
+            <header>
+                    <a href="./index.html"><button class='nav_button'>My Name is Adam Rice</button></a>
+                    <a href="./gallery.html"><button class="nav_button">Images of Things I like</button></a>
+                    <a href="./contact.html"><button class="nav_button">Contact Me</button></a>
+            </header>
         <h2 style="text-align: center; font-size: 200%; text-decoration: underline;">Movies I Like</h2>
         <div id="gallery">
-            <div class="movies"><img class="posters" src="Dark_Knight.jpg"></div>
-            <div class="movies"><img class="posters" src="download.jpg"></div>
-            <div class="movies"><img class="posters" src="v1.jpg"></div>
-            <div class="movies"><img class="posters" src="MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"></div>
-            <div class="movies"><img class="posters" src="Back_to_the_Future.jpg"></div>
-            <div class="movies"><img class="posters" src="51K8ouYrHeL._SY445_.jpg"></div>
+            <div class="movies"><img  id='batman' class="posters" src="Dark_Knight.jpg"></div>
+            <div class="movies"><img id="moonrise" class="posters" src="download.jpg"></div>
+            <div class="movies"><img id='bride' class="posters" src="v1.jpg"></div>
+            <div class="movies"><img id='star_wars' class="posters" src="MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"></div>
+            <div class="movies"><img id="marty" class="posters" src="Back_to_the_Future.jpg"></div>
+            <div class="movies"><img id="indie" class="posters" src="51K8ouYrHeL._SY445_.jpg"></div>
+            <div class="movies"><img id="school" class="posters" src="ferris-poster.jpg"></div>
+            <div class="movies"><img id="holy" class="posters" src="holygrail_lg.jpg"></div>
         </div>
             <footer>
                 <h1 style="text-align: center;">Thanks For Visiting</h1>
