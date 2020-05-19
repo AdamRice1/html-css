@@ -9,7 +9,7 @@
             function move_the_btn() {
             var x = document.getElementById("demo")
             x = Math.floor((Math.random() * 1000) + 1);
-            var y = x + 1;
+            var y = Math.floor((Math.random() * 600) + 1);
             console.log(x)
             console.log(y)
             document.getElementById('btn').style.position = 'absolute'
@@ -49,7 +49,7 @@
                 <div class="form_items">
                     <label>What's Up?</label><br>
                     <textarea name="message" rows="10" cols="50">
-                        What Can I Do For You?
+What Can I Do For You?
                     </textarea>
                 </div>
                 <div class="form_items">
