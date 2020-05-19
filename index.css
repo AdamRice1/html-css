@@ -57,8 +57,8 @@ header{
     display: inline;
 }
 img{
-    width: 400px;
-    height: 400px;
+    width: 25vw;
+    height: 25vw;
 }
 .movies{
     outline: solid;
