@@ -3,9 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>Gallery</title>
+    <!-- <script>
+            function hello(element) {
+                var x = element.src;
+                console.log(x)
+                element.setAttribute('src', x );
+                console.log("Here There")
+            }
+            function back(element) {
+                element.setAttribute('src', x);
+            }
+       </script> -->
+       <script>
+            $(document).ready(function(){
+           $('#school').hover(function () {
+           this.src = 'ferris-poster2.jpg';
+       }, function () {
+           this.src = 'ferris-poster.jpg';
+       });
+           $('#holy').hover(function () {
+           this.src = 'black_knight.jpg';
+       }, function () {
+           this.src = 'holygrail_lg.jpg';
+       });
+       $('#marty').hover(function () {
+           this.src = 'btf2.jpg';
+       }, function () {
+           this.src = 'Back_to_the_Future.jpg';
+       });
+       $('#batman').hover(function () {
+           this.src = 'joker.jpg';
+       }, function () {
+           this.src = 'Dark_Knight.jpg';
+       });
+       $('#moonrise').hover(function () {
+           this.src = 'kingdom.jpg';
+       }, function () {
+           this.src = 'download.jpg';
+       });
+       $('#bride').hover(function () {
+           this.src = 'bride.jpg';
+       }, function () {
+           this.src = 'V1.jpg';
+       });
+       $('#star_wars').hover(function () {
+           this.src = 'wars2.jpg';
+       }, function () {
+           this.src = 'MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg';
+       });
+       $('#indie').hover(function () {
+           this.src = 'raidersbg1.jpg';
+       }, function () {
+           this.src = '51K8ouYrHeL._SY445_.jpg';
+       });
+       });
+       </script>
+       <script>
+           function playVader(){
+               var path = "no-i-am-your-father.mp3"
+               console.log("I have you now")
+               var snd = new Audio(path)
+               snd.play();
+           }
+           function playJoker(){
+               var path = "batman.mp3"
+               console.log("I have you now")
+               var snd = new Audio(path)
+               snd.play();
+           }
+           function playWesley(){
+               var path = "decent.mp3"
+               console.log("I have you now")
+               var snd = new Audio(path)
+               snd.play();
+           }
+           function playIndie(){
+               var path = "backbone.mp3"
+               console.log("I have you now")
+               var snd = new Audio(path)
+               snd.play();
+           }
+           function playDoc(){
+               var path = "butthead.mp3"
+               console.log("I have you now")
+               var snd = new Audio(path)
+               snd.play();
+           }
+       </script>
 </head>
 <body>
-    
+    <div id="wrapper">
+            <header>
+                    <a href="./index.html"><button class='nav_button'>My Name is Adam Rice</button></a>
+                    <a href="./gallery.html"><button class="nav_button">Images of Things I like</button></a>
+                    <a href="./contact.html"><button class="nav_button">Contact Me</button></a>
+            </header>
+        <h2 style="text-align: center; font-size: 200%; text-decoration: underline;">Movies I Like</h2>
+        <div id="gallery">
+            <div class="movies" onclick='playJoker()'><img  id='batman' class="posters" src="Dark_Knight.jpg"></div>
+            <div class="movies"><img id="moonrise" class="posters" src="download.jpg"></div>
+            <div class="movies" onclick="playWesley()"><img id='bride' class="posters" src="v1.jpg"></div>
+            <div class="movies" onclick='playVader()'><img id='star_wars' class="posters" src="MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"></div>
+            <div class="movies" onclick="playDoc()"><img id="marty" class="posters" src="Back_to_the_Future.jpg"></div>
+            <div class="movies" onclick="playIndie()"><img id="indie" class="posters" src="51K8ouYrHeL._SY445_.jpg"></div>
+            <div class="movies"><img id="school" class="posters" src="ferris-poster.jpg"></div>
+            <div class="movies"><img id="holy" class="posters" src="holygrail_lg.jpg"></div>
+        </div>
+            <footer>
+                <h1 style="text-align: center;">Thanks For Visiting</h1>
+            </footer>
+    </div>
 </body>
 </html>

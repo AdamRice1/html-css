@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script>
+            function move_the_btn() {
+            var x = document.getElementById("demo")
+            x = Math.floor((Math.random() * 1000) + 1);
+            var y = Math.floor((Math.random() * 600) + 1);
+            console.log(x)
+            console.log(y)
+            document.getElementById('btn').style.position = 'absolute'
+            document.getElementById('btn').style.left = x + 'px';
+            document.getElementById('btn').style.top = y + 'px';
+            console.log()
+}
+    </script>
 </head>
 <body>
-    
+    <div id="wrapper">
+            <header>
+                    <a href="./index.html"><button class='nav_button'>My Name is Adam Rice</button></a>
+                    <a href="./gallery.html"><button class="nav_button">Images of Things I like</button></a>
+                    <a href="./contact.html"><button class="nav_button">Contact Me</button></a>
+            </header>
+        <div id="contact">
+            <h3>If you contact me I will give you $1,000,000!</h3>
+            <form>
+                <div class="form_items">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name"><br>
+                </div>
+                <div class="form_items">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name"><br>
+                </div>
+                <div class="form_items">
+                    <label for='friends'>Are We Friends?</label>
+                    <select id="friends" name="friends">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="maybe">Maybe</option>
+                        <option value="enemies">Enemies Actually</option>
+                    </select>
+                </div>
+                <div class="form_items">
+                    <label>What's Up?</label><br>
+                    <textarea name="message" rows="10" cols="50">
+What Can I Do For You?
+                    </textarea>
+                </div>
+                <div class="form_items">
+                    <input onmouseover="move_the_btn()" id='btn' type="submit" value="Submit Form">
+                </div>
+            </form>
+        </div>
+        <footer>
+                <h1 style="text-align: center;">Thanks For Visiting</h1>
+            </footer>
+    </div>
 </body>
 </html>
